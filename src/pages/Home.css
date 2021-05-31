@@ -1,0 +1,55 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+    font-size: 32px;
+    height: 48px;
+}
+
+.home_header a {
+    margin-right: 20px;
+    text-decoration: inherit;
+    color: rgba(0, 0,0, 0.87);
+    font-size: 18px;
+}
+
+.home_header a:hover {
+    text-decoration: underline;
+}
+
+.home_headerRight {
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+.home_headerRight > .MuiSvgIcon-root {
+    margin-right: 20px;
+    font-size: 32px;
+}
+
+.home_body {
+/*it is a child of home whos display has benn set to flex*/
+/*the flex: 1, simply says it should occupy the remainng flex position*/
+    flex: 1;
+    display: flex;
+    /*margin-top: 10%;*/
+    flex-direction: column;
+} 
+
+.home_body > img {
+    object-fit: contain;/*prevents image from stretching, maintains aspect ratio*/
+    height: 125px;
+}
+
+.home_inputContainer {
+    padding: 20px;
+}
